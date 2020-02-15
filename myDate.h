@@ -6,6 +6,9 @@ using namespace std;
 
 class myDate{
 private:
+    int month;
+    int day;
+    int year;
 
 
 public:
@@ -13,6 +16,7 @@ public:
     myDate(int,int,int);
     void display();
     void increaseDate(int);
+    void decreaseDate(int);
     int daysBetween(myDate);
     int getMonth();
     int getDay();

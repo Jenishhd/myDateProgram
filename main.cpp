@@ -1,6 +1,10 @@
 #include <iostream>
+#include "myDate.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    myDate x(5,3,2);
+    x.display();
+
     return 0;
 }
