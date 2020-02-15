@@ -13,7 +13,7 @@
 
 
 
-int myDate()
+
 
 
 int Greg2Julian(int month, int day, int year){
