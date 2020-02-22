@@ -29,6 +29,25 @@ myDate:: myDate(int m, int d, int y){
     month = m;
     day = d;
     year = y;
+
+    //Check if date is valid -numbers and loop years
+    Julian2Greg(Greg2Julian(month,day,year),month,day,year);
+    if(month != m || day != d || year != y){
+        month = 5;
+        day = 11;
+        year = 1959;
+    }
+
+//    if(year%4 != 0 && month == 2 && day == 29){
+//        month = 5;
+//        day = 11;
+//        year = 1959;
+//    }
+//    else if(year%400 == 0 && month == 2 && day == 29){
+//        month = 5;
+//        day = 11;
+//        year = 1959;
+//    }
 }
 
 void myDate:: display(){
@@ -71,7 +90,7 @@ int myDate:: daysBetween(myDate date){
 
 }
 
-int myDate:: dayOfYear(){ //Test case for 1st day should be zero
+int myDate:: dayOfYear(){
     myDate x(1,1,year);
     return -1*(daysBetween(x)-1);
 }

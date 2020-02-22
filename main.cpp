@@ -4,11 +4,8 @@
 
 int main() {
 
-    myDate x(3,6,1980);
-    string z = x.dayName();
-
-
-    cout<<z;
+    myDate x(2,29,1987);
+    x.display();
 
 
 
